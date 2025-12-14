@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {COURSES} from '../db-data';
 
+
+// test
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
