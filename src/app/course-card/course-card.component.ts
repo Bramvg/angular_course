@@ -13,9 +13,8 @@ export class CourseCardComponent {
 
     course:Course;
 
-  constructor() {}
-
-  ngOnInit() {
-    }
+  onCourseViewed(){
+    console.log("Course viewed: ", this.course);
+  }
 
 }
