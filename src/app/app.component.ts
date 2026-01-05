@@ -18,5 +18,7 @@ export class AppComponent {
     console.log("App component - CLicked event bubbled....", course);
 
   }
-
+  trackCourse(index:number, course:Course) {
+    return course.id;
+  }
 }

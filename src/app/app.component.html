@@ -8,24 +8,16 @@
 
 <div class="courses">
 
-  @for (course of courses; track course.id; let index = $index; let count = $count;
-    let first = $first; let last = $last; let event = $even; let odd = $odd) {
-
+  @for (course of courses; track $index; let count = $count;) {
 
     <course-card
       [course]="course"
-      [index]="index"
-      [class.is-first]="first"
-      [class.is-last]="last"
-      [class.is-even]="even"
-      [class.is-odd]="odd"
+      [index]="$index"
       (courseSelected)="onCourseSelected($event)"/>
   } @empty {
 
     <h1>No courses found!</h1>
   }
-
-
 </div>
 
 
